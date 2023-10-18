@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(224, 220, 220);
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 50px;
+
+   text-align: center;
+}
+
+p {
+  font-family: 'Young Serif', serif;
+  font-size: 25px;
+
+  text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
+.cards .card {
+    position: relative;
+    /*width: 32rem;*/
+    height: fit-content;
+    overflow: hidden;
+    /*border-radius: 2rem;*/
+      
+}
+
+
+.card {
+    animation: FadeInTop 700ms 175ms backwards;
+}
+
+.card img {
+    transition: all 2600ms;
+    margin: auto;
+    display: block;   
+}
+
+.card img:hover {
+    transform: scale(0.9);
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+
